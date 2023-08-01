@@ -12,15 +12,13 @@ So we will be utilizing a tool called scapy which is used in networking. Okay wi
 
 ## PYTHON SCRIPT
 
-'''bash
+'''python
 
 from scapy.all import *
 
 ps = rdpcap["example.pcap"]
 
 ps[0].show ( )
-
-'''bash
 
 Basically we are importing scapy and utilising the rdpcap method.
 
