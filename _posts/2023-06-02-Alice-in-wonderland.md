@@ -2,7 +2,7 @@
 layout: post
 title: Alice in wonderland
 date: 2023-06-02 12:31:00 +0300
-image: /assets/index.jpg
+image: /assets/index.jpeg
 categories: [Tryhackme, Easy]
 tags: [ssh, nmap, web, privesc]
 ---
