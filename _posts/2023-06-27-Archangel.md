@@ -2,6 +2,7 @@
 layout: post
 title: Archangel
 categories: [Tryhackme, Easy]
+image: https://i.ibb.co/172sMbW/archangel.jpg
 ---
 Hello guys and welcome to yet another writeup. This is ye another easy box on tryhackme and is accessible [here](https://tryhackme.com/room/archangel)
 We shall tackle some awesome topics which include:
