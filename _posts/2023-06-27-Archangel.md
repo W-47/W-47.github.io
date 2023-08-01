@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Archangel
-categories: Privesc
+categories: [Tryhackme, Easy]
 ---
 Hello guys and welcome to yet another writeup. This is ye another easy box on tryhackme and is accessible [here](https://tryhackme.com/room/archangel)
 We shall tackle some awesome topics which include:
