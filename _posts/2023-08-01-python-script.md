@@ -3,7 +3,7 @@
 layout: post
 title: Scapy
 categories: [Networking, Python]
-
+image: https://i.ibb.co/C7Vr7DS/pythony.jpg
 ---
 
 Hey guys and welcome to this sort of tutorial where I will be talking of how we can ease how we look at packets from a very simple python script.
