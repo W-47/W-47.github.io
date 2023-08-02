@@ -2,6 +2,7 @@
 layout: post
 title: Archangel
 categories: [Tryhackme, Easy]
+tags: [Nmap, LFI, Reverse shell]
 image: https://i.ibb.co/172sMbW/archangel.jpg
 ---
 Hello guys and welcome to yet another writeup. This is ye another easy box on tryhackme and is accessible [here](https://tryhackme.com/room/archangel)

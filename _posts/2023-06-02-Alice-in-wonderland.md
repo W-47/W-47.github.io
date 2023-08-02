@@ -3,8 +3,8 @@ layout: post
 title: Alice in wonderland
 date: 2023-06-02 12:31:00 +0300
 image: /assets/index.jpeg
-categories: [Tryhackme, Easy]
-tags: [ssh, nmap, web, privesc]
+categories: [Tryhackme, Medium]
+tags: [ssh, nmap, web, privesc, python library hijacking]
 ---
 Hello and welcome to the tryhack me writeup [Alice on wonderland](https://tryhackme.com/room/wonderland).
 # OVERVIEW
