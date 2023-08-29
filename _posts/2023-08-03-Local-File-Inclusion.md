@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Local File Inclusion
-categories: [Web Exploitation]
+categories: [Web Exploitation, Local File Inclusion]
 tags: [LFI]
 image: https://i.ibb.co/nn0D7Xv/local-file-inclusion-vulnerability.jpg
 ---
