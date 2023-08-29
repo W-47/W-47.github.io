@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bounty Hacker
-categories: [Tryhackme, Easy]
+categories: [Tryhackme, Easy-THM]
 image: https://i.ibb.co/hVcKpN2/bounty.jpg
 ---
 

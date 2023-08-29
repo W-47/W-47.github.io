@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Archangel
-categories: [Tryhackme, Easy]
+categories: [Tryhackme, Easy-THM]
 tags: [nmap, LFI, Reverse shell]
 image: https://i.ibb.co/172sMbW/archangel.jpg
 ---
