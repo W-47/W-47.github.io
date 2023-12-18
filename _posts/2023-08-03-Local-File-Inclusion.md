@@ -36,7 +36,7 @@ The following is an example of PHP code vulnerable to Local File inclusion.
     {
     include(“index.php”);
     }
-    ?>
+    ?> 
 
 Next we will be able to see why this code is vulnerable.
 
@@ -46,7 +46,7 @@ LFI vulnerabilities are easy to identify and exploit. Since LFI occurs when path
 An attacker would attempt to exploit this vulnerability by manipulating the file location parameter such as *http://example/preview.php?file=../../../etc/passwd*.
 The above is an effort to display the contents of the */etc/passwd* file on a UNIX/Linux file system and would load the passwd file. 
 
-![](https://i.ibb.co/C9xwsKX/passwd.png)
+![1](https://i.ibb.co/C9xwsKX/passwd.png)
 
 ## Examples of Techniques used.
 
@@ -107,22 +107,22 @@ So we are going to handle a challenge which involves file path traversal on port
 # Description
 Looking at the description we see that we are supposed to traverse our way to the */etc/passwd* file
 
-![](https://i.ibb.co/DkBFRMr/portswigger.png)
+![2](https://i.ibb.co/DkBFRMr/portswigger.png)
 
 # Analysis 
 Looking around the website we see images and when we click on one we can use burpsuite to capture the request made when we click on one of the products.
 
-![](https://i.ibb.co/RcbRmxs/capturing-request.png)
+![3](https://i.ibb.co/RcbRmxs/capturing-request.png)
 
 Then we can forward this request and get another request which looks like:
 
-![](https://i.ibb.co/5vrGrqY/forwarding-the-request.png)
+![4](https://i.ibb.co/5vrGrqY/forwarding-the-request.png)
 
 Looking at the header we see that the it is using a GET request on filename. We can change the value of this to */../../../etc/passwd* and send this request.
 
 We then get a response with the passwd file contents. Success!
 
-![](https://i.ibb.co/RvGC82Q/response-with-passwd.png)
+![5](https://i.ibb.co/RvGC82Q/response-with-passwd.png)
 
 ## How to Prevent a Directory Traversal Attack
 

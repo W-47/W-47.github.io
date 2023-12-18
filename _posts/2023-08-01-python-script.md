@@ -24,7 +24,7 @@ Basically we are importing scapy and utilising the rdpcap method.
 
 ## ANALYSIS
 
-![](https://i.ibb.co/y0Y6sJp/python.png)
+![1](https://i.ibb.co/y0Y6sJp/python.png)
 
 Let us analyze our output.
 
